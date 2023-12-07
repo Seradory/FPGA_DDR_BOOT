@@ -1,0 +1,26 @@
+2023-12-07T18:26:32.512224800255-18:26:32 **** Incremental Build of configuration Debug for project memory_boot ****
+000-make all 
+000-'Building file: ../src/helloworld.c'
+000-'Invoking: MicroBlaze gcc compiler'
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/alise/Desktop/VIVADO/PROJECTS/MEMORY_WORK/PS/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-'Finished building: ../src/helloworld.c'
+000-' '
+000-'Building file: ../src/platform.c'
+000-'Invoking: MicroBlaze gcc compiler'
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/alise/Desktop/VIVADO/PROJECTS/MEMORY_WORK/PS/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+000-'Finished building: ../src/platform.c'
+000-' '
+000-'Building target: memory_boot.elf'
+000-'Invoking: MicroBlaze gcc linker'
+000-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/alise/Desktop/VIVADO/PROJECTS/MEMORY_WORK/PS/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "memory_boot.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: memory_boot.elf'
+000-' '
+000-'Invoking: MicroBlaze Print Size'
+000-mb-size memory_boot.elf  |tee "memory_boot.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-   2312	    296	  32768	  35376	   8a30	memory_boot.elf
+000-'Finished building: memory_boot.elf.size'
+000-' '
+00255-
+18:26:33 Build Finished (took 738ms)
+
